@@ -1,5 +1,5 @@
-# cpp-reconstruction-application
-Build and applying Coverage Path Planners for 3D reconstruction with UAVs
+# Coverage Path Planners for 3D Reconstruction with UAVs - Build and Applications
++ Mainly focusing on build process and explanation
 
 <br>
 
@@ -11,7 +11,7 @@ Build and applying Coverage Path Planners for 3D reconstruction with UAVs
 <br>
 
 ## Online method (Fully online)
-+ [OIPP](https://github.com/ethz-asl/mav_active_3d_planning): An Efficient Sampling-Based Method for Online Informative Path Planning in Unknown Environments, 2020 RA-L
++ [OIPP](https://github.com/ethz-asl/mav_active_3d_planning): An Efficient Sampling-Based Method for Online Informative Path Planning in Unknown Environments, ***2020 RA-L***
   + Build
   + Run
   + Parameters and remarks
