@@ -27,6 +27,26 @@
 + [Circular CPP](https://github.com/engcang/circular_path_cpp): Circular coverage path planner coded by [`Duckyu Choi`](https://github.com/duckyu) for comparing with SOTA algorithms
 + [SIPP](https://github.com/ethz-asl/StructuralInspectionPlanner): Structural Inspection Path Planning via Iterative Viewpoint Resampling with Application to Aerial Robotics, ***2015 ICRA***
   + Build
+  Prerequisites
+```
+libeigen3-dev
+ros-indigo-tf
+ros-indigo-rviz
+ros-indigo-octomap
+ros-indigo-octomap-msgs
+```
+Install
+```sh
+$ mkdir catkin_ws_repos # assuming you want to enter a new catkin directory
+$ cd catkin_ws_repos # alternatively just cd your normal catkin workspace
+$ mkdir src # assuming this folder does not exist
+$ cd src/
+$ catkin_init_workspace
+$ git clone git@github.com:ethz-asl/StructuralInspectionPlanner.git
+$ cd ..
+$ catkin build
+$ source devel/setup.bash
+```
   + Run
   + Parameters and remarks
 + [ASSCPP](https://github.com/kucars/asscpp): Coverage Path Planning with Adaptive Viewpoint Sampling to Construct 3D Models of Complex Structures for the Purpose of Inspection, ***2018 IROS***
