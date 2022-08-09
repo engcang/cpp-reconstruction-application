@@ -32,15 +32,14 @@
   $ sudo apt install libeigen3-dev ros-<distro>-tf ros-<distro>-rviz ros-<distro>-octomap ros-<distro>-octomap-msgs
   ```
   ```sh
-  $ mkdir catkin_ws_repos # assuming you want to enter a new catkin directory
-  $ cd catkin_ws_repos # alternatively just cd your normal catkin workspace
-  $ mkdir src # assuming this folder does not exist
-  $ cd src/
-  $ catkin_init_workspace
+  $ mkdir -p catkin_ws/src # assuming you want to enter a new catkin directory
+  $ cd catkin_ws/src
+  $ catkin_init_workspace # assuming you want to enter a new catkin directory
   $ git clone git@github.com:ethz-asl/StructuralInspectionPlanner.git
   $ cd ..
   $ catkin build
   $ source devel/setup.bash
+  $ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc # assuming you want to enter a new catkin directory
   ```
   + Run
   ```sh
