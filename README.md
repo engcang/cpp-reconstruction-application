@@ -64,6 +64,10 @@
     
     (More details will be added later)
 
+---
+
+<br>
+
 </details>
 
 + [ASSCPP](https://github.com/kucars/asscpp): Coverage Path Planning with Adaptive Viewpoint Sampling to Construct 3D Models of Complex Structures for the Purpose of Inspection, ***2018 IROS***
