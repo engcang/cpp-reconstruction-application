@@ -10,6 +10,13 @@
 
 <br>
 
+## Depth generation
++ With only camera images
+  + [REMODE](https://github.com/uzh-rpg/rpg_open_remode)
+  + [CasMVSNet](https://github.com/alibaba/cascade-stereo)
++ With Depth sensors (RGB-D, LiDAR, etc.)
+  + [Voxblox](https://github.com/ethz-asl/voxblox)
+
 ## Online method (Fully online)
 + [OIPP](https://github.com/ethz-asl/mav_active_3d_planning): An Efficient Sampling-Based Method for Online Informative Path Planning in Unknown Environments, ***2020 RA-L***
   + Build
@@ -26,6 +33,9 @@
 ## Offline method (model-based)
 + [Circular CPP](https://github.com/engcang/circular_path_cpp): Circular coverage path planner coded by [`Duckyu Choi`](https://github.com/duckyu) for comparing with SOTA algorithms
 + [SIPP](https://github.com/ethz-asl/StructuralInspectionPlanner): Structural Inspection Path Planning via Iterative Viewpoint Resampling with Application to Aerial Robotics, ***2015 ICRA***
+
+<details><summary>Unfold to see</summary>
+
   + Build
   ```sh
   (Prerequisites)
@@ -53,7 +63,9 @@
     You can easily run this open source with your own 3D model(.stl) with a little bit of modification.
     
     (More details will be added later)
-  
+
+</details>
+
 + [ASSCPP](https://github.com/kucars/asscpp): Coverage Path Planning with Adaptive Viewpoint Sampling to Construct 3D Models of Complex Structures for the Purpose of Inspection, ***2018 IROS***
   + Build
   + Run
