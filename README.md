@@ -4,8 +4,8 @@
 <br>
 
 ## How to measure accuracy
-+ Ground truth from `Gazebo` world - https://github.com/ethz-asl/voxblox_ground_truth
-+ Then, generate `Mesh` with your CPP algorithm
++ Ground truth from `Gazebo` world - https://github.com/engcang/voxblox_ground_truth (modified version to generated `.pcd` file)
++ Then, generate `Mesh` in `.ply` format (or `.pcd`) with your CPP algorithm
 + Then, use [`CloudCompare`](https://www.danielgm.net/cc/) which provides distance error between `PointCloud` and `Mesh`
 
 <br>
@@ -34,7 +34,7 @@
 + [Circular CPP](https://github.com/engcang/circular_path_cpp): Circular coverage path planner coded by [`Duckyu Choi`](https://github.com/duckyu) for comparing with SOTA algorithms
 + [SIPP](https://github.com/ethz-asl/StructuralInspectionPlanner): Structural Inspection Path Planning via Iterative Viewpoint Resampling with Application to Aerial Robotics, ***2015 ICRA***
 
-<details><summary>Unfold to see</summary>
+  <details><summary>[Unfold to see]</summary>
 
   + Build
   ```sh
@@ -64,11 +64,11 @@
     
     (More details will be added later)
 
----
+  ---
 
-<br>
+  <br>
 
-</details>
+  </details>
 
 + [ASSCPP](https://github.com/kucars/asscpp): Coverage Path Planning with Adaptive Viewpoint Sampling to Construct 3D Models of Complex Structures for the Purpose of Inspection, ***2018 IROS***
   + Build
