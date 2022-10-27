@@ -55,15 +55,28 @@
   ```sh
   $ roslaunch koptplanner kopt.launch
   $ rviz -d <path_to_SIPP>/sipp.rviz
-  $ rosrun request request 
-  (If you want to run another example such as Bigben, then launch bigBen.launch and run bigBen instead of uppers)
+  $ rosrun request {node_name} 
+  (node_name: request, bigBen, hoaHakanaia, solarPlant)
   ```
-  + Parameters and remarks
-
-    You can easily run this open source with your own 3D model(.stl) with a little bit of modification.
+  + Error
     
-    (More details will be added later)
+  1. If `Segmentation fault` in `rosrun request {node_name}`, there are two cases.
 
+        => Modify code in `StructuralInspectionPlanner/request/src/{node_name}.cpp` as below.(I'm not sure why exactly, but in my case it worked well.)
+      ```sh
+      //assert(line = (char *) malloc(80));
+      line = (char *) malloc(MaxLine = 80);
+      if (line ==NULL){
+        ROS_WARN("malloc error");
+        exit(1);
+      }
+      ```
+        => If you want to run this open source with your own 3D model(.stl), need to check that it is `ASCII` format. Since this open source only supports the ASCII format STL files, if your model is `Binary`, you need to convert it or modify the code.(`std::vector<nav_msgs::Path> * readSTLfile(std::string name)` in `StructuralInspectionPlanner/request/src/{node_name}.cpp`)
+
+  + Remark
+  (More details will be added later)
+
+    
   ---
 
   <br>
